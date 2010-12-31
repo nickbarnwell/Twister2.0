@@ -10,7 +10,6 @@ get '/' do
 	@appendage = Appendages.sample
 	@side = Sides.sample
 	@colour = Colours.sample
-	puts @colour
 	erb :index
 end
 not_found do
