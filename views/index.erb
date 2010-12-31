@@ -7,7 +7,7 @@
     <body>
 		<p class="text">
 		<%= @side %> <%= @appendage %> <span class="<%= @colour %>"><%= @colour %></span><br>
-		<img src="/<%= @side %><%= @appendage %>.png" width="256" height="256"><br>
+		<img src="/<%= @side.downcase %><%= @appendage.downcase %>.png" width="256" height="256"><br>
 		<a href="/">Spin Me</a>
 		</p>
 		
