@@ -1,0 +1,35 @@
+body, html {
+	background: #413839 !important;
+    font-family: Helvetica, Arial, Sans !important;
+	color: #fff;
+}
+
+.text {
+    display: block;
+    height: 49px;
+    color: #fff;
+    font-size: 96px;
+    font-weight: bold;
+    letter-spacing: -6px;
+    text-shadow: 1px 2px 2px #000;
+	text-align: center;
+}
+
+.text a {
+    color: #fff;
+	font-size: 45px;
+    text-decoration: none;
+}
+
+.Green {
+	color: green;
+}
+.Red {
+	color: red;
+}
+.Blue {
+	color: blue;
+}
+.Yellow{
+	color: yellow;
+}
