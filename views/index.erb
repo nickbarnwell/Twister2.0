@@ -3,13 +3,15 @@
     <head>
 		<title>Twister Spinner, NYE 2010</title>
 		<link rel="stylesheet" type="text/css" href="/style.css" />
-		<link rel="shortcut icon" href="/favicon.png" type="image/png">		
+		<link rel="stylesheet" href="/mobile.css" media="handheld, only screen and (max-device-width: 480px)" type="text/css" /> 
+		<link rel="shortcut icon" href="/favicon.png" type="image/png">
     </head>
     <body>
+		<div>
 		<p class="text">
 			<%= @side %> <%= @appendage %> <span class="<%= @colour %>"><%= @colour %></span>
 		</p>
-		
+		</div>
 		<div id="imgcontainer">
 			<img src="/<%= @side.downcase %><%= @appendage.downcase %>.png" width="256" height="256">
 		</div>
