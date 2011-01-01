@@ -7,10 +7,11 @@ Sides = ['Left', 'Right']
 Colours = ['Red','Green','Blue', 'Yellow']
 
 get '/' do
-	@appendage = Appendages.sample
-	@side = Sides.sample
-	@colour = Colours.sample
-	erb :index
+	#@appendage = Appendages.sample
+	#@side = Sides.sample
+	#@colour = Colours.sample
+	#erb :index
+	redirect '/index.html'
 end
 not_found do
 	status 404

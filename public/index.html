@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html>
+    <head>
+		<title>Twister Spinner</title>
+		<link rel="stylesheet" type="text/css" href="/style.css" />
+		<!—Mobile -->
+		<link rel="stylesheet" type="text/css" href="/mobile.css" media="screen and (max-device-width: 480px)" />
+		<!--[if IEMobile 7]>
+		<link rel="stylesheet" type="text/css" href="mobile.css" media="screen"  />
+		<![endif]-->
+		<link rel="shortcut icon" href="/favicon.png" type="image/png">
+    </head>
+    <body>
+		<div>
+		<p id="main" class="text">
+				Left Foot <span id="colour" class="Red">Red</span>
+		</p>
+		</div>
+		<div id="imgcontainer">
+			<img id="image" src="/leftfoot.png" width="256" height="256">
+		</div>
+		<div id="refresh"><a href="#" onclick="twist()">Spin Me</a></div>	
+		
+		<script type="text/javascript"> 
+			var choices = [['Left', 'Right'], ['Foot', 'Hand'], ['Blue', 'Yellow', 'Red', 'Green']],
+			counts = [2, 2, 4];
+			twist = function(){
+				var move  = [];
+
+				for(var i = 0; i < 3; i++){
+					var idx = Math.floor(Math.random() * counts[i]);
+					move.push(choices[i][idx]);
+				}
+				document.getElementById('main').innerHTML = move[0]+' '+move[1]+'<span class=\"'+move[2]+'"> '+move[2]+'</span>';
+				document.getElementById('image').src = '/'+move[0]+move[1]+".png";
+			};
+			twist();
+		</script>
+    </body>
+</html>
