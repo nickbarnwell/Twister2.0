@@ -32,7 +32,7 @@
 					move.push(choices[i][idx]);
 				}
 				document.getElementById('main').innerHTML = move[0]+' '+move[1]+'<span class=\"'+move[2]+'"> '+move[2]+'</span>';
-				document.getElementById('image').src = '/'+move[0]+move[1]+".png";
+				document.getElementById('image').src = '/'+move[0].toLowerCase()+move[1].toLowerCase()+".png";
 			};
 			twist();
 		</script>
